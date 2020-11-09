@@ -4,7 +4,7 @@ export default class SendForm {
 		submit
 	}) {
 		this.form = document.getElementById(formId);
-		this.submit = submit;
+		this.submit = submit.bind(this);
 	}
 
 	init() {
